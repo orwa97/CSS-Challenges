@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.frame {
+    width: 500px;
+    height: 500px;
+    background: rgb(255,200,55);
+    background: linear-gradient(120deg, rgba(255,200,55,1) 0%, rgba(255,128,8,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.radio {
+    display:none;
+}
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+}
+
+.num {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+ .num:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+.num:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.num::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index:-1;
+    position: absolute;
+    transform: scale(0);
+    transition: all 0.2s ease-out;
+ }
+
+ 
+
+ #inp1:checked ~ .num1  {
+    background: none;
+    color: rgba(255,128,8,1);     
+ }
+
+ #inp1:checked ~ .num1::before {
+     transform: scale(1);
+ }
+
+ #inp2:checked ~ .num2  {
+    background: none;
+    color: rgba(255,128,8,1);     
+ }
+
+ #inp2:checked ~ .num2::before {
+     transform: scale(1);
+ }
+
+ #inp3:checked ~ .num3  {
+    background: none;
+    color: rgba(255,128,8,1);     
+ }
+
+ #inp3:checked ~ .num3::before {
+     transform: scale(1);
+ }
+
+ #inp4:checked ~ .num4 {
+    background: none;
+    color: rgba(255,128,8,1);     
+ }
+
+ #inp4:checked ~ .num4::before {
+     transform: scale(1);
+ }

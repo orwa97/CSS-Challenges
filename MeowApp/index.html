@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--------------------- HEADER/START ---------------------->
+        <header class="header">
+            <div class="header__left-side">
+                <img src="img/logo.svg" class="header__logo" alt="awwApp logo">
+                <div class="board-options">
+                    <div class="board-options__options">
+                        <p>AWW board</p>
+                        <input type="checkbox" id="board-options-btn" name="board-options-btn">
+                        <label for="board-options-btn" class="btn btn--with-I-only board-options__list-btn">
+                            <svg class="icon icon--drop-down-arrow">
+                                <use xlink:href="img/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <span class="board-options__vertical-line"></span>
+                    <!-- option button componant -->
+                    <button class="btn btn--with-TandI board-options__export-board-btn">
+                        <svg class="icon board-options__icon-export-board">
+                            <use xlink:href="img/sprite.svg#icon-download"></use>
+                        </svg>
+                        <p>Export board</p>
+                    </button>
+                    <!-- option button componant/END -->
+                </div>
+                <button class=" btn btn--with-TandI btn--invite-btn">
+                    <svg class="icon icon-invite-btn">
+                        <use xlink:href="img/sprite.svg#icon-person_add_alt"></use>
+                    </svg>
+                    <p>Invite</p>
+                </button>
+            </div>
+            <div class="header__right-side">
+                <button class="btn btn--with-I-only home-btn">
+                    <svg class="icon home-btn__icon">
+                        <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                </button>
+                <button class="btn btn--with-TandI help-btn">
+                    <svg class="icon help-btn__icon">
+                        <use xlink:href="img/sprite.svg#icon-error"></use>
+                    </svg>
+                    <p>Help</p>
+                </button>
+                <button class="btn btn--with-T-only log-in-btn">
+                    <p>Log In</p>
+                </button>
+            </div>
+        </header>
+        <!--------------------- HEADER/END ---------------------->
+        
+
+        <!------------------ TOOLBAR/LEFTSIDE/START ------------------->
+
+        <div class="toolbar-leftside">
+            <div class="tool cursor">
+                <svg class="icon toolbar-leftside__icon tool-cursor">
+                    <use xlink:href="img/sprite.svg#icon-cursor"></use>
+                </svg>
+                <div class="tooltip">Select(V)</div>
+            </div>
+            <div class="tool undo">
+                <svg class="icon toolbar-leftside__icon tool-undo">
+                    <use xlink:href="img/sprite.svg#icon-undo"></use>
+                </svg>
+                <div class="tooltip">Undo(U)</div>
+            </div>
+            <div class="tool color">
+                <svg class="icon toolbar-leftside__icon tool-color">
+                    <use xlink:href="img/sprite.svg#icon-color_lens"></use>
+                </svg>
+                <div class="tooltip">Color</div>
+            </div>
+            <div class="tool draw">
+                <svg class="icon toolbar-leftside__icon tool-draw">
+                    <use xlink:href="img/sprite.svg#icon-create"></use>
+                </svg>
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+                <div class="tooltip">Draw</div>
+            </div>
+            <div class="tool erase">
+                <svg class="icon toolbar-leftside__icon tool-erase">
+                    <use xlink:href="img/sprite.svg#icon-eraser"></use>
+                </svg>
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+                <div class="tooltip">Erase</div>
+            </div>
+            <div class="tool shape">
+                <svg class="icon toolbar-leftside__icon tool-shape">
+                    <use xlink:href="img/sprite.svg#icon-format_shapes"></use>
+                </svg>
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+                <div class="tooltip">Shape</div>
+            </div>
+            <div class="tool text">
+                <svg class="icon toolbar-leftside__icon tool-text">
+                    <use xlink:href="img/sprite.svg#icon-text_fields"></use>
+                </svg>
+                <div class="tooltip">Text</div>
+            </div>
+            <div class="tool postit">
+                <svg class="icon toolbar-leftside__icon tool-postit">
+                    <use xlink:href="img/sprite.svg#icon-document-edit"></use>
+                </svg>
+                <div class="tooltip">Postit(N)</div>
+            </div>
+            <div class="tool upload">
+                <svg class="icon toolbar-leftside__icon tool-upload" alt="upload">
+                    <use xlink:href="img/sprite.svg#icon-add"></use>
+                </svg>
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow_right"></use>
+                </svg>
+                <div class="tooltip">Upload</div>
+            </div>
+        </div>
+        <!------------------- TOOLBAR/LEFTSIDE/END -------------------->
+
+        <!----------------- TOOLBAR/RIGHTSIDE/START ------------------>
+        <div class="toolbar-rightside">
+            <div class="tool zoom-in">
+                <svg class="icon toolbar-rightside__icon tool-zoom-in">
+                    <use xlink:href="img/sprite.svg#icon-add"></use>
+                </svg>
+                <div class="tooltip">Zoom-in</div>
+            </div>
+            <div class="tool zoom-out">
+                <svg class="icon toolbar-rightside__icon tool-zoom-out">
+                    <use xlink:href="img/sprite.svg#icon-remove"></use>
+                </svg>
+                <div class="tooltip">Zoom-out</div>
+            </div>
+            <div class="tool fullscreen">
+                <svg class="icon toolbar-rightside__icon fullscreen-in">
+                    <use xlink:href="img/sprite.svg#icon-open_in_full"></use>
+                </svg>
+                <div class="tooltip">Fullscreen</div>
+            </div>
+            <div class="tool move">
+                <svg class="icon toolbar-rightside__icon tool-move">
+                    <use xlink:href="img/sprite.svg#icon-move"></use>
+                </svg>
+                <div class="tooltip">Pan</div>
+            </div>
+            <div class="tool fit">
+                <svg class="icon toolbar-rightside__icon tool-fit">
+                    <use xlink:href="img/sprite.svg#icon-expand"></use>
+                </svg>
+                <div class="tooltip">Fit to screen</div>
+            </div>
+            <div class="tool enable-pointer">
+                <svg class="icon toolbar-rightside__icon tool-enable-pointer">
+                    <use xlink:href="img/sprite.svg#icon-direction"></use>
+                </svg>
+                <div class="tooltip">Enable mouse pointer</div>
+            </div>
+        </div>
+
+    </div>
+</body>
